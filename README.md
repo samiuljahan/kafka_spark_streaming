@@ -14,8 +14,8 @@ sudo yum install kafka
 sudo yum install kafka-server
 sudo service kafka-server start 
 ```
-It started **Kafka**
-Then used the following command to see the services running. And it showed **Kafka** as a service
+It started **Kafka**. 
+Then I used the following command to see the services running. And it showed **Kafka** as a service
 
 ```
 sudo jps
