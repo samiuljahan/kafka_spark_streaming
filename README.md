@@ -30,7 +30,7 @@ Listed topics
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
 
-Started comsumer to see the tweets from the begining
+Started **comsumer** on the shell to see the tweets from the begining
 ```
 bin/kafka-console-consumer.sh --zookeeper localhost:2181 -topic newtweets --from-beginning
 ```
@@ -38,8 +38,8 @@ After that, I ran the producer program using the following command
 ```
 java -jar stream_producer.jar
 ```
-It sent the tweets to the **Kafka topic** and printed them on the console. I was able to check from the consumer shell that I ran before
-to see the **tweets** were coming.
+It sent the tweets to the **Kafka topic** and printed them on the console. I was able to check from the **consumer shell** that I ran before
+to see whether the  **tweets** were coming.
 
 Finally, I ran the producer program using the following command
 
@@ -78,10 +78,10 @@ Unfortunately, I was not able to store the streaming results into **Hive**
 
 ### Screenshots 
 
-* Twitter Producer with Spark Streaming running. Pulling tweets, printing them and sending to Kafka topic
+* Twitter **Producer** with **Spark Streaming** running. Pulling tweets, printing them on the console and sending them to the **Kafka topic**
 
 <img width="831" alt="prodcuer" src="https://user-images.githubusercontent.com/7520167/95055944-9d238800-06b9-11eb-9489-954354aae095.PNG">
 
-* Twitter Consumer running. Pulling tweets from the Kafka topic, using Spark Streaming and Generating counts for locations
+* Twitter **Consumer** running. Pulling tweets from the **Kafka topic**, using **Spark Streaming** and finally, generating counts for locations
 
 <img width="498" alt="consumer" src="https://user-images.githubusercontent.com/7520167/95055847-7cf3c900-06b9-11eb-8be0-7ac836f76fa0.PNG">
